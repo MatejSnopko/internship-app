@@ -516,7 +516,7 @@ async function generate() {
   try {
     setProgress(40, 'Writing your cover letter & email…');
 
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
+    const res = await fetch('https://internship-worker.matejsnopko00.workers.dev', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
